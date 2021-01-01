@@ -1,13 +1,90 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-color: #F4F3F9;
+}
+
+
+.todoContainer {
+  max-width: 400px;
+  margin: 40px auto;
+  background-color: #ffff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.ipFieldWIthSub {
+  display: flex;
+  justify-content: center;
+}
+
+.addTodo {
+  background-color: #8A82EF;
+  height: 42px;
+  padding: 0 8px;
+  border: 1px solid #8A82EF;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  outline: white;
+}
+
+.Input {
+  margin-top: 30px;
+}
+
+.Input input {
+  padding: 10px;
+  outline: white;
+  border:1px solid #ddd;
+  width: 300px;
+  margin-bottom: 10px;
+}
+
+
+
+.Emptywarning {
+  color: red;
+  font-weight: 550;
+  display: block !important;
+}
+
+.sucessAdd {
+  color: green !important;
+  font-weight: 550;
+}
+
+.todoListArea {
+  margin-top: 20px !important;
+}
+
+.Singlelist {
+  margin: 20px;
+  padding: 14px;
+  border: 1px solid #ddd;
+  position: relative;
+}
+
+.closeIcon {
+  position: absolute;
+  position: absolute;
+  left: 326px;
+  top: -13px;
+  border-radius: 50%;
+  background-color: #979797;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.alldone {
+  margin: 20px;
+  padding: 14px;
+  text-align: center;
 }
